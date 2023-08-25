@@ -11,6 +11,8 @@ form.addEventListener('submit', function(e){
     linha += `<td>${inputNotaAtividade.value >= 7 ? 'Aprovado' : 'Reprovado'}</td>`;
     linha +=`</tr>`;
 
+    linhas+= linha;
+
     const corpoTabela = document.querySelector('tbody');
     corpoTabela.innerHTML = linha;
 });
